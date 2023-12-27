@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(68deg, #7b1022 16.62%, #b5c997 85.61%);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem{
+    height: 72px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px
+}
+
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo{
+    margin-bottom: 48PX;
+    border-top: 0.4px solid #FFF2E7
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7;
+}
+
+.conteudo-principal-subtitulo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.conteudo-principal-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+    transition-duration: 400ms;
+}
+
+.conteudo-principal-botao:hover{
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-imagem{
+    height: 430px;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+
+.rodape{
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.rodape-imagem{
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width: 576px){
+    
+
+    .cabecalho-menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 13vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        background-color: #a30f27;
+        gap: 0;
+        border: 2px solid white;
+    }
+
+    .cabecalho-menu-item{
+        padding: 10px;
+        width: 100%;
+        border-bottom: 0.4px solid white;
+    }
+
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .conteudo-principal-escrito{
+        align-items: center;
+    }
+
+    .conteudo-principal-imagem{
+        margin-top: 20px;
+    }
+
+    .conteudo-secundario-titulo, .conteudo-secundario-paragrafo{
+        padding: 5px 10px 0;
+    }
+
+    /*.rodape-imagem{
+        margin-bottom: 280px;  Por algum, a partir do primeiro "Conteudo secundario paragrafo", todo o conteudo estava sumindo da tela
+        e esses margin-bottom fez com que esse conteúdo sumido voltasse a aparecer aumentando a "quantidade de coisas" que no caso é esse margin para baixo.
+    }*/
+}
