@@ -7,7 +7,7 @@ O Pokémon Essentials é um conjunto de recursos e ferramentas que capacita os f
 ## 📷 Imagens
 
 <p align="center">
-    <img alt="Projeto em funcionamento" src="./src/img/Lading Page Pokémon.png" width="100%">
+    <img alt="Imagem de apresentação" src="./src/Landing-Page-Pokemon.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
